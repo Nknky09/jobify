@@ -4,11 +4,11 @@
         "colId": "history",
         "containerId": "",
         "name": "http://localhost:5100",
-        "url": "http://localhost:5100",
+        "url": "http://localhost:5100/api/v1/jobs",
         "method": "GET",
         "sortNum": 0,
         "created": "2024-12-22T05:58:32.792Z",
-        "modified": "2024-12-22T05:58:32.792Z",
+        "modified": "2024-12-22T06:22:53.237Z",
         "headers": []
     },
     {
