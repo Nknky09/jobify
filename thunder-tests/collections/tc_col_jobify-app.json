@@ -22,48 +22,19 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-12-22T06:22:07.645Z",
-            "modified": "2024-12-22T06:24:16.969Z",
+            "modified": "2024-12-23T21:55:39.604Z",
             "headers": []
         },
         {
-            "_id": "79e57adf-8b25-4eee-94e9-27ba4d79e105",
+            "_id": "2bc9cc0d-6364-4309-9a5d-f7ce171c3827",
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Create Job",
             "url": "{{URL}}/jobs",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-12-22T06:29:25.595Z",
-            "modified": "2024-12-22T06:29:53.604Z",
-            "headers": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"company\": \"facebook\",\n  \"position\": \"devops\"\n}",
-                "form": []
-            }
-        },
-        {
-            "_id": "608dd323-ce82-4c3c-bcca-ce4a26232ffa",
-            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
-            "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
-            "name": "Get Single Job",
-            "url": "{{URL}}/jobs/mllnCe8juaH1s7tCUWG_C",
-            "method": "GET",
-            "sortNum": 20000,
-            "created": "2024-12-22T06:35:45.914Z",
-            "modified": "2024-12-22T06:38:52.629Z",
-            "headers": []
-        },
-        {
-            "_id": "a0d7b934-60d0-4da3-98c5-7b13ffab6586",
-            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
-            "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
-            "name": "Edit Job",
-            "url": "{{URL}}/jobs/0lwQeHMXKgGLBOlFXjjwA",
-            "method": "PATCH",
-            "sortNum": 30000,
-            "created": "2024-12-22T06:42:33.568Z",
-            "modified": "2024-12-22T06:47:06.332Z",
+            "created": "2024-12-23T22:19:50.650Z",
+            "modified": "2024-12-23T22:25:00.837Z",
             "headers": [],
             "body": {
                 "type": "json",
