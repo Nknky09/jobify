@@ -59,11 +59,11 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Edit Job",
-            "url": "{{URL}}/jobs/beXrJLEPy39g3DyMjyYE-",
+            "url": "{{URL}}/jobs/LJfIiZKxGOqMiuAeuhpP5",
             "method": "PATCH",
             "sortNum": 40000,
             "created": "2024-12-23T22:49:59.717Z",
-            "modified": "2024-12-23T23:13:44.576Z",
+            "modified": "2024-12-24T21:33:52.492Z",
             "headers": [],
             "body": {
                 "type": "json",
