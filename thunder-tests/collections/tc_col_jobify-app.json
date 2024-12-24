@@ -59,15 +59,15 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Edit Job",
-            "url": "{{URL}}/jobs/LJfIiZKxGOqMiuAeuhpP5",
+            "url": "{{URL}}/jobs/676b3479327c7415b0426ae4",
             "method": "PATCH",
             "sortNum": 40000,
             "created": "2024-12-23T22:49:59.717Z",
-            "modified": "2024-12-24T21:33:52.492Z",
+            "modified": "2024-12-24T22:52:44.581Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"company\":\"test\",\n  \"position\": \"intern\"\n}",
+                "raw": "{\n  \"company\":\"apple\",\n  \"position\": \"full-stack\"\n}",
                 "form": []
             }
         },
@@ -76,11 +76,11 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Delete Job",
-            "url": "{{URL}}/jobs/beXrJLEPy39g3DyMjyYE-",
+            "url": "{{URL}}/jobs/676b3124241babd7336c142b",
             "method": "DELETE",
             "sortNum": 50000,
             "created": "2024-12-23T23:18:44.860Z",
-            "modified": "2024-12-23T23:19:46.148Z",
+            "modified": "2024-12-24T22:48:14.324Z",
             "headers": []
         }
     ]
