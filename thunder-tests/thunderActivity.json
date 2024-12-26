@@ -8,11 +8,11 @@
         "method": "POST",
         "sortNum": 0,
         "created": "2024-12-26T16:21:48.982Z",
-        "modified": "2024-12-26T16:32:16.816Z",
+        "modified": "2024-12-26T16:43:01.646Z",
         "headers": [],
         "body": {
             "type": "json",
-            "raw": "{\n  \"name\": \"peter\"\n}",
+            "raw": "{\n  \"name\": \"\"\n}",
             "form": []
         }
     }
