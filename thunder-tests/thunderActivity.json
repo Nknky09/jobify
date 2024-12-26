@@ -1,1 +1,19 @@
-[]
+[
+    {
+        "_id": "69577ea9-77bc-4547-92f6-315a13c586b7",
+        "colId": "history",
+        "containerId": "",
+        "name": "{{URL}}/test",
+        "url": "{{URL}}/test",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2024-12-26T16:21:48.982Z",
+        "modified": "2024-12-26T16:32:16.816Z",
+        "headers": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"peter\"\n}",
+            "form": []
+        }
+    }
+]
