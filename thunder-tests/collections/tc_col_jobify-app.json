@@ -99,8 +99,13 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-12-27T04:46:08.732Z",
-            "modified": "2024-12-27T04:46:22.431Z",
-            "headers": []
+            "modified": "2024-12-27T04:49:44.816Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"john\",\n  \"email\":\"john@gmail.com\",\n  \"password\":\"secret123\",\n  \"lastName\":\"smith\",\n  \"location\":\"my city\"\n}",
+                "form": []
+            }
         },
         {
             "_id": "a376feda-886e-423c-b21a-055bdfcdc977",
