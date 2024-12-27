@@ -99,11 +99,11 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-12-27T04:46:08.732Z",
-            "modified": "2024-12-27T05:00:44.327Z",
+            "modified": "2024-12-27T15:06:54.934Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"john\",\n  \"email\":\"peter@gmail.com\",\n  \"password\":\"secret123\",\n  \"lastName\":\"smith\",\n  \"location\":\"my city\"\n}",
+                "raw": "{\n  \"name\":\"john\",\n  \"email\":\"john@gmail.com\",\n  \"password\":\"secret123\",\n  \"lastName\":\"smith\",\n  \"location\":\"my city\"\n}",
                 "form": []
             }
         },
