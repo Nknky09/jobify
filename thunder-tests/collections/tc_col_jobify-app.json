@@ -17,6 +17,13 @@
             "containerId": "",
             "created": "2024-12-27T04:45:56.770Z",
             "sortNum": 20000
+        },
+        {
+            "_id": "72f68d9d-62ad-4e3a-b0ec-e5598f0eacdf",
+            "name": "User Routes",
+            "containerId": "",
+            "created": "2024-12-28T04:57:28.460Z",
+            "sortNum": 30000
         }
     ],
     "requests": [
@@ -41,11 +48,11 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-12-23T22:19:50.650Z",
-            "modified": "2024-12-26T19:27:20.802Z",
+            "modified": "2024-12-28T04:10:12.755Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"position\": \"backend-end\",\n  \"jobStatus\": \"pending\",\n  \"jobType\": \"full-time\",\n  \"jobLocation\": \"florida\"\n}",
+                "raw": "{\n  \"company\": \"facebook\",\n  \"position\": \"front-end\",\n  \"jobStatus\": \"pending\",\n  \"jobType\": \"full-time\",\n  \"jobLocation\": \"california\"\n}",
                 "form": []
             }
         },
@@ -54,11 +61,11 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Get Single Job",
-            "url": "{{URL}}/jobs/676dadfd55b24911bdca4182",
+            "url": "{{URL}}/jobs/676f7a24275989b5e85e6748",
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-12-23T22:35:46.667Z",
-            "modified": "2024-12-26T21:16:48.300Z",
+            "modified": "2024-12-28T04:14:08.445Z",
             "headers": []
         },
         {
@@ -83,11 +90,11 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Delete Job",
-            "url": "{{URL}}/jobs/676b3124241babd7336c142b",
+            "url": "{{URL}}/jobs/676f7974275989b5e85e6745",
             "method": "DELETE",
             "sortNum": 50000,
             "created": "2024-12-23T23:18:44.860Z",
-            "modified": "2024-12-24T22:48:14.324Z",
+            "modified": "2024-12-28T04:10:24.707Z",
             "headers": []
         },
         {
@@ -99,11 +106,11 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-12-27T04:46:08.732Z",
-            "modified": "2024-12-27T15:06:54.934Z",
+            "modified": "2024-12-28T04:13:17.524Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"john\",\n  \"email\":\"john@gmail.com\",\n  \"password\":\"secret123\",\n  \"lastName\":\"smith\",\n  \"location\":\"my city\"\n}",
+                "raw": "{\n  \"name\":\"john\",\n  \"email\":\"peter@gmail.com\",\n  \"password\":\"secret123\",\n  \"lastName\":\"smith\",\n  \"location\":\"my city\"\n}",
                 "form": []
             }
         },
@@ -116,13 +123,61 @@
             "method": "POST",
             "sortNum": 80000,
             "created": "2024-12-27T04:46:33.519Z",
-            "modified": "2024-12-27T16:43:41.367Z",
+            "modified": "2024-12-28T04:54:54.826Z",
             "headers": [],
             "body": {
                 "type": "json",
                 "raw": "{\n  \"email\": \"john@gmail.com\",\n  \"password\": \"secret123\"\n}",
                 "form": []
             }
+        },
+        {
+            "_id": "d729f4d0-93e1-4815-9a88-1721b664522a",
+            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
+            "containerId": "3d4b1e2c-4a69-43a4-a5b6-444cec99ffab",
+            "name": "Logout User",
+            "url": "{{URL}}/auth/logout",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-12-28T04:45:06.346Z",
+            "modified": "2024-12-28T04:46:37.372Z",
+            "headers": []
+        },
+        {
+            "_id": "8cfa652c-6d50-436f-b156-fb91c2fb2fa8",
+            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
+            "containerId": "72f68d9d-62ad-4e3a-b0ec-e5598f0eacdf",
+            "name": "Get Current User",
+            "url": "{{URL}}/users/current-user",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-12-28T04:57:34.702Z",
+            "modified": "2024-12-28T04:58:53.243Z",
+            "headers": []
+        },
+        {
+            "_id": "882f6154-5c6e-43f6-9c98-ebe9ced00626",
+            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
+            "containerId": "72f68d9d-62ad-4e3a-b0ec-e5598f0eacdf",
+            "name": "Application Stats",
+            "url": "{{URL}}/users/admin/app-stats",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-12-28T04:57:52.515Z",
+            "modified": "2024-12-28T04:58:59.191Z",
+            "headers": []
+        },
+        {
+            "_id": "65d96a11-b90b-41a6-b55f-bbc64975a320",
+            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
+            "containerId": "72f68d9d-62ad-4e3a-b0ec-e5598f0eacdf",
+            "name": "Update User",
+            "url": "{{URL}}/users/update-user",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2024-12-28T04:57:54.093Z",
+            "modified": "2024-12-28T05:00:08.280Z",
+            "headers": []
         }
     ]
 }
