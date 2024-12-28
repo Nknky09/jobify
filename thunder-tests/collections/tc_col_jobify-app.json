@@ -123,11 +123,11 @@
             "method": "POST",
             "sortNum": 80000,
             "created": "2024-12-27T04:46:33.519Z",
-            "modified": "2024-12-28T04:54:54.826Z",
+            "modified": "2024-12-28T05:04:47.795Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\": \"john@gmail.com\",\n  \"password\": \"secret123\"\n}",
+                "raw": "{\n  \"email\": \"peter@gmail.com\",\n  \"password\": \"secret123\"\n}",
                 "form": []
             }
         },
@@ -176,8 +176,13 @@
             "method": "PATCH",
             "sortNum": 120000,
             "created": "2024-12-28T04:57:54.093Z",
-            "modified": "2024-12-28T05:00:08.280Z",
-            "headers": []
+            "modified": "2024-12-28T05:22:02.978Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"john\",\n  \"email\": \"peter@gmail.com\",\n  \"lastName\": \"smith\",\n  \"location\": \"florida\",\n  \"password\": \"secret\"\n}",
+                "form": []
+            }
         }
     ]
 }
