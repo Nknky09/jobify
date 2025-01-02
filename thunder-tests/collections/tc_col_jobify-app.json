@@ -77,11 +77,11 @@
             "method": "PATCH",
             "sortNum": 40000,
             "created": "2024-12-23T22:49:59.717Z",
-            "modified": "2024-12-26T19:28:14.381Z",
+            "modified": "2025-01-02T21:17:07.365Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"company\": \"coding addict\",\n  \"position\": \"front-end\",\n  \"jobStatus\": \"pending\",\n  \"jobType\": \"full-time\",\n  \"jobLocation\": \"florida\"\n}",
+                "raw": "{\n  \"company\": \"facebook\",\n  \"position\": \"devops\",\n  \"jobStatus\": \"interview\",\n  \"jobType\": \"full-time\",\n  \"jobLocation\": \"earth\"\n}",
                 "form": []
             }
         },
