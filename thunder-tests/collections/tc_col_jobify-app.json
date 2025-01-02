@@ -48,11 +48,11 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-12-23T22:19:50.650Z",
-            "modified": "2024-12-28T04:10:12.755Z",
+            "modified": "2025-01-02T03:51:24.339Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"company\": \"facebook\",\n  \"position\": \"front-end\",\n  \"jobStatus\": \"pending\",\n  \"jobType\": \"full-time\",\n  \"jobLocation\": \"california\"\n}",
+                "raw": "{\n  \"company\": \"coding addict\",\n  \"position\": \"designer\",\n  \"jobStatus\": \"pending\",\n  \"jobType\": \"full-time\",\n  \"jobLocation\": \"florida\"\n}",
                 "form": []
             }
         },
