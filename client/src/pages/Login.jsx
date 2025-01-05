@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Form,
-  Link,
-  redirect,
-  useNavigation,
-  useActionData,
-} from "react-router-dom";
+import { Form, Link, redirect, useActionData } from "react-router-dom";
 import Wrapper from "../assets/wrappers/RegisterAndLoginPage";
 import { FormRow, Logo } from "../assets/components";
 import customFetch from "../utils/customFetch";
