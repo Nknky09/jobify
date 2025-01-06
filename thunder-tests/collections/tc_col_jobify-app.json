@@ -183,6 +183,18 @@
                 "raw": "{\n  \"name\": \"john\",\n  \"email\": \"peter@gmail.com\",\n  \"lastName\": \"smith\",\n  \"location\": \"florida\",\n  \"password\": \"secret\"\n}",
                 "form": []
             }
+        },
+        {
+            "_id": "9e61a690-729e-475c-9958-a6d3deb4f09a",
+            "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
+            "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
+            "name": "Show Stats",
+            "url": "{{URL}}/jobs/stats",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2025-01-06T23:07:51.566Z",
+            "modified": "2025-01-06T23:08:04.100Z",
+            "headers": []
         }
     ]
 }

@@ -1,5 +1,7 @@
 import Job from "../models/JobModel.js";
 import { StatusCodes } from "http-status-codes";
+import mongoose from "mongoose";
+import day from "dayjs";
 
 import { nanoid } from "nanoid";
 
@@ -35,4 +37,27 @@ export const updateJob = async (req, res) => {
 export const deleteJob = async (req, res) => {
   const removedJob = await Job.findByIdAndDelete(req.params.id);
   res.status(StatusCodes.OK).json({ msg: "job deleted", job: removedJob });
+};
+
+export const showStats = async (req, res) => {
+  const defaultStats = {
+    pending: 22,
+    interview: 11,
+    declined: 4,
+  };
+  let monthlyApplications = [
+    {
+      date: "May 23",
+      count: 12,
+    },
+    {
+      date: "June 23",
+      count: 9,
+    },
+    {
+      date: "July 23",
+      count: 3,
+    },
+  ];
+  res.status(StatusCodes.OK).json({ defaultStats, monthlyApplications });
 };
