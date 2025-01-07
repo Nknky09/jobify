@@ -50,26 +50,35 @@ export const showStats = async (req, res) => {
     acc[title] = count;
     return acc;
   }, {});
-  console.log(stats);
 
   const defaultStats = {
     pending: stats.pending || 0,
     interview: stats.interview || 0,
     declined: stats.declined || 0,
   };
-  let monthlyApplications = [
+
+  let monthlyApplications = await Job.aggregate([
+    { $match: { createdBy: new mongoose.Types.ObjectId(req.user.userId) } },
     {
-      date: "May 23",
-      count: 12,
+      $group: {
+        _id: { year: { $year: "$createdAt" }, month: { $month: "$createdAt" } },
+        count: { $sum: 1 },
+      },
     },
-    {
-      date: "June 23",
-      count: 9,
-    },
-    {
-      date: "July 23",
-      count: 3,
-    },
-  ];
+  ]);
+  // [
+  //   // {
+  //   //   date: "May 23",
+  //   //   count: 12,
+  //   // },
+  //   // {
+  //   //   date: "June 23",
+  //   //   count: 9,
+  //   // },
+  //   // {
+  //   //   date: "July 23",
+  //   //   count: 3,
+  //   // },
+  // ];
   res.status(StatusCodes.OK).json({ defaultStats, monthlyApplications });
 };
