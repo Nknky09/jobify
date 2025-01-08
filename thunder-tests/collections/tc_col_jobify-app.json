@@ -32,11 +32,11 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Get All Jobs",
-            "url": "{{URL}}/jobs?search&jobStatus=declined&jobType=full-time",
+            "url": "{{URL}}/jobs?search&jobStatus=declined&jobType=full-time&sort=a-z",
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-12-22T06:22:07.645Z",
-            "modified": "2025-01-08T20:41:44.190Z",
+            "modified": "2025-01-08T20:47:56.688Z",
             "headers": [],
             "params": [
                 {
@@ -52,6 +52,11 @@
                 {
                     "name": "jobType",
                     "value": "full-time",
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "a-z",
                     "isPath": false
                 }
             ]
