@@ -1,14 +1,7 @@
 import Job from "../models/JobModel.js";
 import { StatusCodes } from "http-status-codes";
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 import day from "dayjs";
-
-import { nanoid } from "nanoid";
-
-let jobs = [
-  { id: nanoid(), company: "apple", position: "front-end" },
-  { id: nanoid(), company: "google", position: "back-end" },
-];
 
 export const getAllJobs = async (req, res) => {
   const jobs = await Job.find({ createdBy: req.user.userId });
