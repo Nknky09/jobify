@@ -65,20 +65,25 @@ export const showStats = async (req, res) => {
         count: { $sum: 1 },
       },
     },
+    { $sort: { "_id.year": -1, "_id.month": -1 } },
+    { $limit: 6 },
   ]);
-  // [
-  //   // {
-  //   //   date: "May 23",
-  //   //   count: 12,
-  //   // },
-  //   // {
-  //   //   date: "June 23",
-  //   //   count: 9,
-  //   // },
-  //   // {
-  //   //   date: "July 23",
-  //   //   count: 3,
-  //   // },
-  // ];
+
+  monthlyApplications = monthlyApplications
+    .map(item => {
+      const {
+        _id: { year, month },
+        count,
+      } = item;
+
+      const date = day()
+        .month(month - 1)
+        .year(year)
+        .format("MMM YY");
+
+      return { date, count };
+    })
+    .reverse();
+
   res.status(StatusCodes.OK).json({ defaultStats, monthlyApplications });
 };
