@@ -5,11 +5,18 @@ import { JobsContainer, SearchContainer } from "../assets/components";
 import { useLoaderData } from "react-router-dom";
 import { useContext, createContext } from "react";
 
-export const loader = async () => {
-  console.log("hello");
+export const loader = async ({ request }) => {
+  console.log(request.url);
+  const params = Object.fromEntries([
+    ...new URL(request.url).searchParams.entries(),
+  ]);
+  console.log(params);
+
   try {
-    const { data } = await customFetch.get("/jobs");
-    return { data };
+    const { data } = await customFetch.get("/jobs", {
+      params,
+    });
+    return { data, searchValues: { ...params } };
   } catch (error) {
     toast.error(error?.response?.data?.msg);
     return error;
@@ -18,10 +25,11 @@ export const loader = async () => {
 
 const AllJobsContext = createContext();
 const AllJobs = () => {
-  const { data } = useLoaderData();
+  const { data, searchValues } = useLoaderData();
+  const jobs = data?.jobs;
 
   return (
-    <AllJobsContext.Provider value={data}>
+    <AllJobsContext.Provider value={{ jobs, searchValues }}>
       <SearchContainer />
       <JobsContainer />
     </AllJobsContext.Provider>

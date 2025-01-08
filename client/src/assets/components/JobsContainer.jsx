@@ -4,9 +4,9 @@ import Wrapper from "../wrappers/JobsContainer";
 import { useAllJobsContext } from "../../pages/AllJobs";
 
 const JobsContainer = () => {
-  const data = useAllJobsContext();
-  const { jobs } = data;
-  if (jobs.length === 0) {
+  const { jobs } = useAllJobsContext();
+
+  if (!jobs || jobs.length === 0) {
     return (
       <Wrapper>
         <h2>No jobs to display...</h2>
