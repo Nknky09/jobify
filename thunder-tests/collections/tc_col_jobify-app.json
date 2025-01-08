@@ -32,12 +32,19 @@
             "colId": "43291dab-96bc-4b05-ada5-f36dcef1aae1",
             "containerId": "d848c27f-0f18-4ac5-8b64-160efd6c5ffd",
             "name": "Get All Jobs",
-            "url": "{{URL}}/jobs",
+            "url": "{{URL}}/jobs?search",
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-12-22T06:22:07.645Z",
-            "modified": "2024-12-24T21:03:56.827Z",
-            "headers": []
+            "modified": "2025-01-08T20:36:18.149Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "",
+                    "isPath": false
+                }
+            ]
         },
         {
             "_id": "2bc9cc0d-6364-4309-9a5d-f7ce171c3827",
