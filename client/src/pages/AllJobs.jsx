@@ -26,10 +26,12 @@ export const loader = async ({ request }) => {
 const AllJobsContext = createContext();
 const AllJobs = () => {
   const { data, searchValues = {} } = useLoaderData();
-  const { jobs, totalJobs } = data;
+  const { jobs, totalJobs, numOfPages, currentPage } = data;
 
   return (
-    <AllJobsContext.Provider value={{ jobs, searchValues, totalJobs }}>
+    <AllJobsContext.Provider
+      value={{ jobs, searchValues, totalJobs, numOfPages, currentPage }}
+    >
       <SearchContainer />
       <JobsContainer />
     </AllJobsContext.Provider>

@@ -6,8 +6,9 @@ import { useAllJobsContext } from "../../pages/AllJobs";
 
 const PageBtnContainer = () => {
   const { numOfPages, currentPage } = useAllJobsContext();
-  console.log(numOfPages);
+  console.log(numOfPages, currentPage);
   return <h1>PageBtnContainer</h1>;
+  s;
 };
 
 export default PageBtnContainer;
