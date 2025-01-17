@@ -28,6 +28,7 @@ import { action as deleteJobAction } from "./pages/DeleteJob";
 import { loader as adminLoader } from "./pages/Admin";
 import { action as profileAction } from "./pages/Profile";
 import { loader as statsLoader } from "./pages/Stats";
+import ErrorElement from "./assets/components/ErrorElement";
 
 export const checkDefaultTheme = () => {
   const isDarkTheme = localStorage.getItem("darkTheme") === "true";
@@ -38,8 +39,10 @@ export const checkDefaultTheme = () => {
 const isDarkThemeEnabled = checkDefaultTheme();
 
 const queryClient = new QueryClient({
-  queries: {
-    staleTime: 1000 * 60 * 5,
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5,
+    },
   },
 });
 
@@ -77,6 +80,7 @@ const router = createBrowserRouter([
             path: "stats",
             element: <Stats />,
             loader: statsLoader,
+            errorElement: <ErrorElement />,
           },
           {
             path: "all-jobs",
